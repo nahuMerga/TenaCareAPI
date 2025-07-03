@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .models import Remedies, HealthTips, FirstAid
 from .serializers import RemediesSerializer, HealthTipsSerializer, FirstAidSerializer
+from rest_framework.authtoken.models import Token
 
 
 # Create your views here.
