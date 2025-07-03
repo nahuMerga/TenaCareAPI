@@ -11,6 +11,8 @@ SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")  # fallback only for
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ["*"]  # adjust for production
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 AUTH_USER_MODEL = 'users.User'
 
